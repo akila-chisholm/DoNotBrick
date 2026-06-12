@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The rebel origins of Brick Troopers — your dedicated LEGO Star Wars set store.">
+  <title>Brick Troopers | Our Story</title>
+  <link rel="stylesheet" href="css/global.css">  <!-- Shared site styles -->
+  <link rel="stylesheet" href="css/about.css">   <!-- About-page-only styles -->
+</head>
+
+<body>
+
+  <!-- HEADER: identical on every page — only class="active" changes -->
+  <header class="site-header">
+    <a class="logo" href="index.html">
+      <img src="img/infotech-logo.svg" alt="Brick Troopers logo">
+      <span>Brick Troopers</span>
+    </a>
+    <!-- MOBILE MENU TOGGLE: shown on mobile only; desktop/tablet keep the normal navigation visible -->
+    <input class="menu-toggle" type="checkbox" id="menu-toggle" aria-label="Toggle navigation menu">
+    <label class="menu-button" for="menu-toggle">
+      <img src="img/icon.png" alt="" aria-hidden="true">
+      <span>Menu</span>
+    </label>
+    <nav aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a class="active" href="about.html">About</a>  <!-- Active = current page -->
+      <a href="products.html">Sets</a>
+      <a href="checkout.html">Checkout</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- INTRO: short origin story -->
+    <section>
+      <h1>The Rebel Origin Story</h1>
+      <p>
+        Brick Troopers was founded by two LEGO Star Wars builders who once spent an entire
+        weekend recreating the Battle of Endor — only to find the Ewok Village sold out
+        across three galaxies. From that harrowing weekend, a mission was born:
+        <em>no builder shall be left brickless.</em>  <!-- em = italic emphasis -->
+      </p>
+      <p>
+        We stock only LEGO Star Wars sets — battle packs to the colossal Ultimate Collector Series.
+        If it has a minifigure and a lightsaber, we probably sell it.
+      </p>
+    </section>
+
+    <!-- VALUE CARDS: three promises in a card grid -->
+    <section>
+      <h2>The Brick Troopers Code</h2>
+      <div class="card-grid">
+
+        <article class="card">
+          <h3>Troopers First</h3>
+          <p>All factions — Stormtrooper, Clone, Snow, Sand — grouped for speedy browsing.</p>
+        </article>
+
+        <article class="card">
+          <h3>Padawan to Jedi Master</h3>
+          <p>First set or 400th display shelf — we have the right build for every level.</p>
+        </article>
+
+        <article class="card">
+          <h3>Order Support Guild</h3>
+          <p>Faster response than the Rebel Fleet. Order questions and shipping drama handled.</p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- HERO WITH IMAGE: two-column layout -->
+    <section class="hero about-hero">
+      <!-- Two classes: "hero" = layout, "about-hero" = image crop from about.css -->
+      <div>
+        <h2>Built by Fans, for Fans</h2>
+        <p>
+          Every page here makes finding and ordering LEGO Star Wars sets as smooth
+          as a TIE Fighter in open space. Simple navigation — your brainpower
+          belongs on the instruction booklet.
+        </p>
+      </div>
+      <img src="img/about.jpg" alt="LEGO Star Wars stormtrooper minifigures lined up for battle">
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Brick Troopers &mdash; LEGO Star Wars Enthusiast Store</p>
+    <p>LEGO and Star Wars are trademarks of their respective owners. Fan-built educational site.</p>
+  </footer>
+
+</body>
+</html>

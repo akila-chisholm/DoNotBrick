@@ -1,0 +1,99 @@
+/* ============================================================
+   products.css — Products page only styles
+   Loaded by: products.html (after global.css)
+   ============================================================ */
+
+
+/* --- TABLE -------------------------------------------------- */
+.table-wrap {
+  overflow-x: auto; /* Horizontal scroll on small screens */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse; /* Merge cell borders into single lines */
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+}
+
+th,
+td {
+  border: 1px solid var(--border);
+  padding: 0.65rem 0.8rem;
+  text-align: left;
+  vertical-align: top;       /* Align text to top of cell */
+  color: var(--text);
+}
+
+th {
+  background-color: #0e1a30; /* Darker header row */
+  color: var(--accent);      /* Yellow column headings */
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+tr:nth-child(even) td {
+  background-color: #0c1525; /* Zebra stripe — shades every second row */
+}
+
+
+/* --- PRODUCT GRID — 4 columns, 5 rows ---------------------- */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns = 20 cards in 5 rows */
+  gap: 1rem;
+}
+
+.product-card {
+  background-color: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden; /* Clip image corners inside rounded card */
+}
+
+.product-card:hover {
+  border-color: var(--accent); /* Yellow border on hover */
+}
+
+.product-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;  /* Crop image to fill height */
+  display: block;     /* Remove inline image gap */
+  border-bottom: 1px solid var(--border);
+}
+
+.product-card-body {
+  padding: 0.85rem; /* Inner spacing below image */
+}
+
+.product-card h3 {
+  margin: 0 0 0.3rem;
+  font-size: 0.95rem;
+  color: var(--text);
+  line-height: 1.3;
+}
+
+.product-price {
+  margin: 0 0 0.4rem;
+  font-weight: 700;
+  color: var(--accent); /* Yellow price */
+  font-size: 1.05rem;
+}
+
+.product-card p {
+  margin: 0;
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+
+/* --- RESPONSIVE — product grid only ----------------------- */
+@media (max-width: 900px) {
+  .product-grid { grid-template-columns: repeat(2, 1fr); } /* 2 columns on tablet */
+}
+
+@media (max-width: 500px) {
+  .product-grid { grid-template-columns: 1fr; } /* 1 column on phone */
+}

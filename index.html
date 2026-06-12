@@ -1,0 +1,89 @@
+<!DOCTYPE html>                    <!-- Tells browser: this is HTML5 -->
+<html lang="en">                   <!-- Root element; lang="en" = English -->
+<head>                             <!-- Metadata section — not shown on screen -->
+  <meta charset="UTF-8">          <!-- Supports all standard characters -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Mobile scaling -->
+  <meta name="description" content="Brick Troopers — Your galaxy's most trusted LEGO Star Wars set store."> <!-- Search engine snippet -->
+  <title>Brick Troopers | LEGO Star Wars HQ</title> <!-- Browser tab text -->
+  <link rel="stylesheet" href="css/global.css"> <!-- Shared styles for all pages -->
+  <link rel="stylesheet" href="css/index.css">  <!-- Extra styles for this page only -->
+</head>
+
+<body>  <!-- Everything visible on screen lives here -->
+
+  <!-- HEADER: logo + navigation — same on every page -->
+  <header class="site-header">               <!-- Semantic header element; sticky top bar -->
+    <a class="logo" href="index.html">        <!-- Logo is a link back to home -->
+      <img src="img/infotech-logo.svg" alt="Brick Troopers logo"> <!-- alt text for accessibility -->
+      <span>Brick Troopers</span>             <!-- Brand name text beside logo -->
+    </a>
+
+    <!-- MOBILE MENU TOGGLE: shown on mobile only; desktop/tablet keep the normal navigation visible -->
+    <input class="menu-toggle" type="checkbox" id="menu-toggle" aria-label="Toggle navigation menu">
+    <label class="menu-button" for="menu-toggle">
+      <img src="img/icon.png" alt="" aria-hidden="true">
+      <span>Menu</span>
+    </label>
+    <nav aria-label="Primary">               <!-- nav groups navigation links; aria-label names it -->
+      <a class="active" href="index.html">Home</a>     <!-- class="active" = current page -->
+      <a href="about.html">About</a>
+      <a href="products.html">Sets</a>
+      <a href="checkout.html">Checkout</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- MAIN: the page's unique content -->
+  <main>  <!-- Only one <main> per page; screen readers jump to it -->
+
+    <!-- HERO: big welcome message + feature image -->
+    <section class="hero">  <!-- class="hero" applies the two-column grid layout -->
+      <div>                 <!-- div groups the text so it sits in the left column -->
+        <h1>A Long Time Ago in a Toy Aisle Far, Far Away…</h1>  <!-- One h1 per page -->
+        <p>
+          Welcome to <strong style="color:var(--accent)">Brick Troopers</strong> — the galaxy's most
+          dedicated LEGO Star Wars store. Build a one-trooper army or recreate
+          the entire Battle of Hoth — you've clicked the right hyperdrive coordinates.
+        </p>  <!-- <strong> makes text bold and signals importance -->
+      </div>
+      <img src="img/hero-960.jpg" alt="LEGO Star Wars trooper display set"> <!-- Right-column image -->
+    </section>
+
+    <!-- SERVICES: three feature cards -->
+    <section>
+      <h2>What We Do (Besides Look Cool)</h2>  <!-- h2 = section heading -->
+      <div class="card-grid">                   <!-- Three-column card layout -->
+
+        <article class="card">   <!-- article = self-contained content (a card) -->
+          <h3>Fresh Stock, Every Rotation</h3>  <!-- h3 = card heading -->
+          <p>New and retiring sets updated daily. We track the galaxy so you don't have to.</p>
+        </article>
+
+        <article class="card">
+          <h3>Bundle Intel</h3>
+          <p>Best battle pack combos, starship pairings and minifigure loadouts calculated by droids.</p>
+        </article>
+
+        <article class="card">
+          <h3>Tracked Shipping</h3>
+          <p>Full tracking on every order. Safer than the Millennium Falcon through the Kessel Run.</p>
+        </article>
+
+      </div>
+
+      <p class="note">   <!-- class="note" applies the yellow-bordered info box from index.css -->
+        Image licensing note: all images are from existing project assets
+        for educational use in this assessment only.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- FOOTER: site info at the bottom of every page -->
+  <footer>
+    <p>&copy; 2026 Brick Troopers &mdash; LEGO Star Wars Enthusiast Store</p>  <!-- &copy; = © symbol -->
+    <p>LEGO and Star Wars are trademarks of their respective owners. Fan-built educational site.</p>
+  </footer>
+
+</body>
+</html>

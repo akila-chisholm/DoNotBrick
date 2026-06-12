@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="logoTitle logoDesc">
+  <title id="logoTitle">Lego Troopers Store Logo</title>
+  <desc id="logoDesc">Dark blue square logo with LT initials and orange accent circle.</desc>
+  <rect width="120" height="120" rx="20" fill="#1f2933"/>
+  <rect x="10" y="10" width="100" height="100" rx="16" fill="#334e68"/>
+  <path d="M30 34h12v52h-12zm16 40h36v12H46zm0-40h12v28H46zm18 0h12v28H64z" fill="#ffd6bf"/>
+  <circle cx="90" cy="90" r="12" fill="#ff8c42"/>
+</svg>
